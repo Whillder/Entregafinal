@@ -187,8 +187,20 @@ header .navbar .header button {
 .conocimientos button p {
   margin: 0;
 }
+.conocimientos .html {
+  background: rgb(240, 112, 57);
+}
+.conocimientos .css {
+  background: rgb(0, 131, 221);
+}
+.conocimientos .javas {
+  background: rgb(255, 206, 0);
+}
+.conocimientos .github {
+  background: rgb(94, 94, 94);
+}
 .conocimientos .progress {
-  background-color: rgba(134, 135, 136, 0.8117647059);
+  background-color: rgba(116, 116, 116, 0.8117647059);
 }
 .conocimientos .progress p {
   margin: 0;

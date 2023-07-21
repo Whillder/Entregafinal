@@ -13,8 +13,20 @@
         margin: 0;
     }
     }
+    .html {
+        background: map-get($cursos,html);
+    }
+    .css{
+        background: map-get($cursos,css);
+    }
+    .javas {
+        background: map-get($cursos,javas);
+    }
+    .github {
+        background: map-get($cursos,github);
+    }
     .progress {
-        background-color: #868788cf;
+        background-color: #747474cf;
         p {
             margin: 0;
         }

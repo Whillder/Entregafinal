@@ -1,22 +1,17 @@
-/*Conocimientos*/
-.conocimientos button {
-  padding: 0px 20px 0 0;
-}
-.conocimientos button .imagenp {
-  display: inline;
-  justify-items: center;
-  padding: 20px;
-  height: 100px;
-  width: 100px;
-}
-.conocimientos button p {
-  margin: 0;
-}
-.conocimientos .progress {
-  background-color: rgba(134, 135, 136, 0.8117647059);
-}
-.conocimientos .progress p {
-  margin: 0;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 17 |         background: map-get($cursos,html);
+ *    |                             ^^^^^^^
+ *    '
+ *   scss\conocimientos.scss 17:29  root stylesheet */
 
-/*# sourceMappingURL=conocimientos.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 17 \2502          background: map-get($cursos,html);\d\a    \2502                              ^^^^^^^\a    \2575 \a   scss\\conocimientos.scss 17:29  root stylesheet";
+}
