@@ -40,8 +40,8 @@ header a.nav-link {
   color: #ffffff;
   margin: 0%;
 }
-header a.nav-link a:hover {
-  color: #000000;
+header a.nav-link:hover {
+  transform: scale(1.1);
 }
 header div {
   display: flex;
@@ -68,6 +68,7 @@ header .navbar .header button {
   height: 600px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
 }
 .inicio section {
@@ -95,11 +96,12 @@ header .navbar .header button {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
 }
 .inicio section .contenido .texto .accordion {
   margin-bottom: 110px;
   --bs-accordion-bg: transparent;
-  --bs-accordion-active-bg: #ffffff75;
+  --bs-accordion-active-bg: map-get(bgs-colors, accordion_bg );
   backdrop-filter: blur(5px);
 }
 .inicio section .contenido .texto p {
@@ -108,7 +110,7 @@ header .navbar .header button {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: flex-start;
   padding: 0;
   margin: 0;
 }
@@ -119,7 +121,7 @@ header .navbar .header button {
   padding: 10px 0 0 0;
 }
 .portfolio .slices {
-  height: 400px;
+  height: 500px;
   text-align: center;
   margin-block: auto;
   border: #ffffff solid;
@@ -129,8 +131,8 @@ header .navbar .header button {
 }
 .portfolio .slices .carousel-inner .carousel-item.active {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100%;
 }
 .portfolio .slices .carousel-inner .carousel-item.active img {
@@ -138,9 +140,15 @@ header .navbar .header button {
   text-align: center;
   margin-left: 20px;
 }
+.portfolio .slices .carousel-inner .carousel-item.active h2 {
+  font-size: 20px;
+}
 .portfolio .slices .carousel-inner .carousel-item.active a:hover {
   cursor: pointer;
   color: #000000;
+}
+.portfolio .slices .button:hover {
+  transform: scale(2);
 }
 
 /*Info*/
@@ -149,13 +157,19 @@ header .navbar .header button {
   justify-content: space-evenly;
 }
 .sobreMi .row .card {
+  box-shadow: 0 0 10px #9b9b9b;
   width: 18rem;
   margin: 5px 5px 5px 5px;
   background-color: #ffffff;
 }
-.sobreMi .row .card iframe {
-  margin-top: 10px;
+.sobreMi .row .card img {
+  padding-top: 10px;
   height: 25vh;
+  transition: all 1s;
+}
+.sobreMi .row .card img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
 }
 .sobreMi .row .card .card-body {
   display: flex;
@@ -172,6 +186,9 @@ header .navbar .header button {
   justify-content: center;
   margin-top: auto;
 }
+.sobreMi .row .card .card-body a:hover {
+  transform: scale(1.1);
+}
 
 /*Conocimientos*/
 .conocimientos button {
@@ -186,18 +203,6 @@ header .navbar .header button {
 }
 .conocimientos button p {
   margin: 0;
-}
-.conocimientos .html {
-  background: rgb(240, 112, 57);
-}
-.conocimientos .css {
-  background: rgb(0, 131, 221);
-}
-.conocimientos .javas {
-  background: rgb(255, 206, 0);
-}
-.conocimientos .github {
-  background: rgb(94, 94, 94);
 }
 .conocimientos .progress {
   background-color: rgba(116, 116, 116, 0.8117647059);
@@ -216,6 +221,7 @@ header .navbar .header button {
   align-items: center;
   border: 2px #ffffff solid;
   border-radius: 10px;
+  backdrop-filter: blur(10px);
 }
 .contacts form div {
   margin: 5px;
@@ -233,6 +239,7 @@ header .navbar .header button {
   padding: 1px;
 }
 .contacts form div button {
+  background: linear-gradient(to right, rgb(29, 29, 29), white, rgb(29, 29, 29));
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 2px;
@@ -265,6 +272,9 @@ footer .redes {
 footer .redes img {
   height: 60px;
   width: 60px;
+}
+footer .redes img:hover {
+  transform: scale(1.2);
 }
 footer .redes .whatssap img {
   padding: 5px;

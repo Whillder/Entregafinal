@@ -2,9 +2,7 @@
 .inicio {
     margin: auto;
     height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-ColumnCenter;
 
     section {
         display: flex;
@@ -30,25 +28,19 @@
             }
 
             .texto {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-
+                @include flex-ColumnCenter;
+                align-items: flex-start; 
                 .accordion {
                     margin-bottom: 110px;
                     --bs-accordion-bg: transparent;
-                    --bs-accordion-active-bg: #ffffff75;
+                    --bs-accordion-active-bg: map-get(bgs-colors, accordion_bg );
                     backdrop-filter: blur(5px);
                 }
 
                 p {
-                    color: $font-color;
-                    display: flex;
-                    flex-direction: column;
+                    color: map-get($fonts-colors, font-color);
+                    @include flex-ColumnCenter;
                     align-items: flex-start;
-                    justify-content: center;
-                    flex-wrap: wrap;
                     padding: 0;
                     margin: 0;
                 }

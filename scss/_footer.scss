@@ -5,15 +5,17 @@ footer {
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: $primary_bg;
+    background-color: map-get($bgs-colors, primary_bg);
     justify-content: space-around;
     .redes{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         img {
-            height: 60px;
-            width: 60px;
+            @include with-imgFooter;
+            &:hover{
+                transform: scale(1.2);
+            }
             }
             .whatssap img {
                 padding: 5px;
@@ -22,8 +24,7 @@ footer {
         
     }
     p {
-        display: flex;
-        justify-content: center;
+        @include flex-JustiCenter;
         margin: 0px;
         color: darkgray;
         font-size: 13px;

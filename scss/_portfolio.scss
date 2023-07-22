@@ -6,7 +6,7 @@
     }
 
     .slices {
-        height: 400px;
+        height: 500px;
         text-align: center;
         margin-block: auto;
         border: #ffffff solid;
@@ -15,9 +15,8 @@
             height: 100%;
 
             .carousel-item.active {
-                display: flex;
+                @include flex-JustiCenter;
                 align-items: center;
-                justify-content: center;
                 height: 100%;
 
                 img {
@@ -25,12 +24,17 @@
                     text-align: center;
                     margin-left: 20px;
                 }
-
+                h2{
+                    font-size: 20px;
+                }
                 a:hover {
                     cursor: pointer;
-                    color: $hover-color;
+                    color: map-get($fonts-colors, hover-color);
                 }
             }
+        }
+        .button:hover{
+            transform: scale(2);
         }
     }
 }

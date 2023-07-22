@@ -2,11 +2,11 @@
 header {
     a.nav-link {
         text-decoration: none;
-        color: $font-color;
+        color: map-get($fonts-colors, font-color);
         margin: 0%;
-
-        a:hover {
-            color: $hover-color;
+        &:hover{
+            transform: scale(1.1);
+            color: map-get($bgs-colors, hover-color);
         }
     }
 
@@ -19,7 +19,7 @@ header {
         padding: 0 0 0 0;
 
         .header {
-            background-color: $primary_bg;
+            background-color: map-get($bgs-colors, primary_bg);
 
             .logo {
                 height: 90px;
