@@ -11,21 +11,39 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        img {
+        align-items: center;
+        margin: 15px 0 5px 0;
+        svg {
             @include with-imgFooter;
-            &:hover{
+            fill: map-get($bgs-colors, secondary_bg);
+            }
+            .facebook:hover{
                 transform: scale(1.2);
+                background: map-get($bgs-colors,secondary_bg);
+                fill:#2050b3;
+                border-radius: 10px;
             }
+            .instagram:hover{
+                transform: scale(1.2);
+                border-radius: 10px;
+                background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
             }
-            .whatssap img {
-                padding: 5px;
-                border-radius: 50px;
+            .linkedin:hover{
+                transform: scale(1.2);
+                border-radius: 10px;
+                background: map-get($bgs-colors,secondary_bg);
+                fill: #0077b5;
             }
-        
-    }
+            .whatssap:hover{
+                transform: scale(1.2);
+                border-radius: 10px;
+                fill: #25d366;
+                background: map-get($bgs-colors,secondary_bg);
+            }
+        }
     p {
         @include flex-JustiCenter;
-        margin: 0px;
+        margin: 5px 0 0 0;
         color: darkgray;
         font-size: 13px;
     }

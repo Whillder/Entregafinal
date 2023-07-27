@@ -1,15 +1,21 @@
 /*header*/
 header {
-    a.nav-link {
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+        text-decoration: none;
+        color: map-get($fonts-colors, hover-color);
+        margin: 0%; 
+        color: rgb(255 189 1);
+        transform: scale(1.1);
+    }
+    a.nav-link{
         text-decoration: none;
         color: map-get($fonts-colors, font-color);
         margin: 0%;
         &:hover{
             transform: scale(1.1);
-            color: map-get($bgs-colors, hover-color);
+            color: map-get($fonts-colors, hover-color);
         }
     }
-
     div {
         display: flex;
         justify-content: space-between;
@@ -24,7 +30,7 @@ header {
             .logo {
                 height: 90px;
                 width: 90px;
-                padding: 5px;
+                margin: 10px;
             }
 
             button {

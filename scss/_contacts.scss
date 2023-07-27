@@ -23,7 +23,7 @@
                 padding: 1px;
             }
             button {
-                background: linear-gradient(to right,rgb(29, 29, 29),white,rgb(29, 29, 29));
+                background: linear-gradient(to right,map-get($bgs-colors,primary_bg),map-get($bgs-colors,secondary_bg),map-get($bgs-colors,primary_bg));
                 margin-top: 10px;
                 margin-bottom: 10px;
                 padding: 2px;

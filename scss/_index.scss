@@ -10,6 +10,13 @@
 
         h1 {
             text-align: center;
+            margin-bottom: 0px;
+        }
+        h2{
+            color: map-get($fonts-colors, font-color);
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 40px;
         }
     }
 
@@ -28,24 +35,26 @@
             }
 
             .texto {
+                border: 2px solid white;
                 @include flex-ColumnCenter;
-                align-items: flex-start; 
-                .accordion {
-                    margin-bottom: 110px;
-                    --bs-accordion-bg: transparent;
-                    --bs-accordion-active-bg: map-get(bgs-colors, accordion_bg );
-                    backdrop-filter: blur(5px);
+                align-items: flex-start;
+                margin-bottom: 20px;
+                backdrop-filter: blur(5px);
+                border-radius: 10px;
+                padding: 15px;
+                    .invit{
+                        font-size: 20px;
+                        align-items: center;
+                    }
                 }
-
                 p {
                     color: map-get($fonts-colors, font-color);
                     @include flex-ColumnCenter;
                     align-items: flex-start;
                     padding: 0;
-                    margin: 0;
+                    margin:0;
                 }
             }
         }
     }
-}
 

@@ -1,0 +1,30 @@
+/*Conocimientos*/
+.conocimientos {
+        .accordion{
+            --bs-accordion-bg: #299bddc2;
+        button {
+        padding: 0px 20px 0 0;
+        background-color: map-get($bgs-colors, primary_bg);
+        &:not(.collapsed){
+            background-color: map-get($bgs-colors, primary_bg);
+        }
+        .imagenp {
+            display: inline;
+            justify-items: center;
+            padding: 20px;
+            height: 100px;
+            width: 100px;
+                }
+        p {
+            margin: 0;
+            color: map-get($fonts-colors, font-color);
+        }
+        }
+        .progress {
+            background-color: map-get($bgs-colors,progress_bg );
+            p {
+                margin: 0;
+            }
+        }
+    }
+}
