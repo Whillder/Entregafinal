@@ -11,20 +11,19 @@
         section .contenido .texto {
             align-items: center;
             margin-top: 20px;
-        .accordion {
-            margin-top: 20px;
+            .accordion {
+                margin-top: 20px;
+            }
         }
     }
-    }
-
-    footer{
-        .redes svg{
+    footer {
+        .redes svg {
             width: 30px;
             height: 30px;
         }
-    p {
-        font-size: 8px;
-    }
+        p {
+            font-size: 8px;
+        }
     }
     .contacts form div {
         display: flex;

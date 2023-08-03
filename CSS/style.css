@@ -165,6 +165,22 @@ header .navbar .header button {
 .portfolio .slices .button:hover {
   transform: scale(2);
 }
+.portfolio .descriptions {
+  margin: 20px 0 10px 0;
+  justify-content: space-evenly;
+}
+.portfolio .descriptions div {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 5px;
+}
+.portfolio .descriptions div p {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  color: #ffffff;
+}
 
 /*Info*/
 .certificados .row {
@@ -206,8 +222,12 @@ header .navbar .header button {
 }
 
 /*Conocimientos*/
+.conocimientos p {
+  color: #ffffff;
+  text-align: center;
+}
 .conocimientos .accordion {
-  --bs-accordion-bg: #299bddc2;
+  --bs-accordion-bg: #279addc2;
 }
 .conocimientos .accordion button {
   padding: 0px 20px 0 0;
@@ -238,43 +258,58 @@ header .navbar .header button {
 .contacts {
   text-align: center;
 }
-.contacts form {
+.contacts .contactsForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contacts .contactsForm div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contacts .contactsForm div form {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 2px #ffffff solid;
   border-radius: 10px;
   backdrop-filter: blur(10px);
+  width: 400px;
 }
-.contacts form div {
-  margin: 5px;
+.contacts .contactsForm div form div {
+  margin: 2px;
   width: 80%;
 }
-.contacts form div label {
-  margin: 5px;
+.contacts .contactsForm div form div label {
+  margin: 10px 0px 0px 0px;
   color: #ffffff;
   padding: 1px;
 }
-.contacts form div input {
-  height: 25px;
+.contacts .contactsForm div form div input {
+  height: 30px;
 }
-.contacts form div textarea {
+.contacts .contactsForm div form div textarea {
   padding: 1px;
 }
-.contacts form div button {
-  background: linear-gradient(to right, #295264, #ffffff, #295264);
+.contacts .contactsForm div form div button {
+  background: #295264;
+  background: linear-gradient(90deg, #295264 30%, #ffffff 50%, #295264 70%);
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 2px;
   width: 100%;
 }
-.contacts iframe {
+.contacts section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts section iframe {
   margin-top: 10px;
   width: 90%;
   height: 90%;
-}
-.contacts .redes {
-  margin-top: 10px;
 }
 
 /*footer*/

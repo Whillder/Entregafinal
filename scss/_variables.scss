@@ -1,23 +1,26 @@
 /*Variables*/
-$fonts-colors:(
+$fonts-colors: (
     font-color: #ffffff,
     hover-color: #dda302,
 );
-$bgs-colors:(
+$bgs-colors: (
     primary_bg: #295264,
     secondary_bg: #ffffff,
     progress_bg: #747474cf,
     accordion_bg: #ffffff75,
 );
+
 @mixin with-imgFooter {
     height: 60px;
     width: 60px;
 }
-@mixin flex-JustiCenter{
+
+@mixin flex-JustiCenter {
     display: flex;
     justify-content: center;
 }
-@mixin flex-ColumnCenter{
+
+@mixin flex-ColumnCenter {
     display: flex;
     flex-direction: column;
     justify-content: center;

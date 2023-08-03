@@ -1,43 +1,57 @@
 /*contacts*/
 .contacts {
     text-align: center;
-    form {
+        .contactsForm{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                        form {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            border: 2px #ffffff solid;
+                            border-radius: 10px;
+                            backdrop-filter: blur(10px);
+                            width: 400px;
+                                div {
+                                    margin: 2px;
+                                    width: 80%;
+                                        label {
+                                            margin: 10px 0px 0px 0px;
+                                            color: map-get($fonts-colors, font-color);
+                                            padding: 1px;
+                                            }
+                                        input {
+                                            height: 30px;
+                                            }
+                                        textarea {
+                                            padding: 1px;
+                                            }
+                                        button {
+                                            background: map-get($bgs-colors, primary_bg);
+                                            background: linear-gradient(90deg, map-get($bgs-colors, primary_bg) 30% , map-get($bgs-colors, secondary_bg) 50%, map-get($bgs-colors, primary_bg) 70%);
+                                            margin-top: 10px;
+                                            margin-bottom: 10px;
+                                            padding: 2px;
+                                            width: 100%;
+                                            }
+                                    }
+                            }
+                    }       
+                }
+    section{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        border: 2px #ffffff solid;
-        border-radius: 10px;
-        backdrop-filter: blur(10px);
-        div {
-            margin: 5px;
-            width: 80%;
-            label {
-                margin: 5px;
-                color: map-get($fonts-colors, font-color);
-                padding: 1px;
-            }
-            input {
-                height: 25px;
-            }
-            textarea {
-                padding: 1px;
-            }
-            button {
-                background: linear-gradient(to right,map-get($bgs-colors,primary_bg),map-get($bgs-colors,secondary_bg),map-get($bgs-colors,primary_bg));
-                margin-top: 10px;
-                margin-bottom: 10px;
-                padding: 2px;
-                width: 100%;
-                
-            }
-        }
-    }
     iframe {
         margin-top: 10px;
         width: 90%;
         height: 90%;
     }
-    .redes{
-        margin-top: 10px;   
     }
 }

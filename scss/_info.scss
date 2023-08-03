@@ -3,12 +3,11 @@
     .row {
         margin: 0;
         justify-content: space-evenly;
-
         .card {
             box-shadow: 0 0 10px #9b9b9b;
             width: 18rem;
             margin: 5px 5px 5px 5px;
-            &:hover{
+            &:hover {
                 transform: scale(1.1);
                 cursor: pointer;
             }
@@ -30,11 +29,11 @@
                 a {
                     @include flex-JustiCenter;
                     margin-top: auto;
-                    &:hover{
+                    &:hover {
                         transform: scale(1.1);
                     }
-                }
                 }
             }
         }
     }
+}
