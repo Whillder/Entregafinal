@@ -3,6 +3,8 @@
   p {
     color: map-get($fonts-colors, font-color);
     text-align: center;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
   }
   .accordion {
     --bs-accordion-bg: #279addc2;

@@ -39,7 +39,7 @@ header .navbar-nav .nav-link.active, header .navbar-nav .nav-link.show {
   text-decoration: none;
   color: #dda302;
   margin: 0%;
-  color: rgb(255, 189, 1);
+  color: #ffbd01;
   transform: scale(1.1);
 }
 header a.nav-link {
@@ -173,6 +173,7 @@ header .navbar .header button {
   border: 2px solid white;
   border-radius: 10px;
   margin: 5px;
+  backdrop-filter: blur(5px);
 }
 .portfolio .descriptions div p {
   font-size: 16px;
@@ -225,6 +226,8 @@ header .navbar .header button {
 .conocimientos p {
   color: #ffffff;
   text-align: center;
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
 }
 .conocimientos .accordion {
   --bs-accordion-bg: #279addc2;
@@ -365,6 +368,21 @@ footer p {
   font-size: 13px;
 }
 
+@media (max-width: 992px) {
+  .inicio {
+    height: auto;
+  }
+  .inicio section .contenido .texto {
+    align-items: center;
+    margin-top: 20px;
+  }
+  .inicio section .contenido .texto .accordion {
+    margin-top: 20px;
+  }
+  .contacts .contactsForm div form {
+    width: 350px;
+  }
+}
 @media (max-width: 320px) {
   header .navbar .header .logo {
     width: 70px;
@@ -393,6 +411,9 @@ footer p {
   .contacts form div {
     display: flex;
     flex-direction: column;
+  }
+  .contacts .contactsForm div form {
+    width: auto;
   }
 }
 

@@ -1,3 +1,24 @@
+@media (max-width: 992px) {
+    .inicio {
+        height: auto;
+        section .contenido .texto {
+            align-items: center;
+            margin-top: 20px;
+            .accordion {
+                margin-top: 20px;
+            }
+        }
+    }
+    .contacts{ 
+        .contactsForm{ 
+            div{ 
+                form {
+                    width: 350px;
+                }
+                }
+            }
+        }
+    }
 @media (max-width: 320px) {
     header .navbar .header .logo {
         width: 70px;
@@ -29,4 +50,13 @@
         display: flex;
         flex-direction: column;
     }
-}
+    .contacts{ 
+        .contactsForm{ 
+            div{ 
+                form {
+                    width: auto;
+                }
+                }
+            }
+        }
+    }
