@@ -69,6 +69,9 @@ header .navbar .header .logo {
 header .navbar .header button {
   border: 0;
 }
+header .navbar .header .nav {
+  justify-content: flex-end;
+}
 
 /*Index*/
 .inicio {
@@ -384,12 +387,15 @@ footer p {
   }
 }
 @media (max-width: 320px) {
+  main {
+    margin: 10px 0 10px 0;
+  }
+  main p {
+    font-size: 18px;
+  }
   header .navbar .header .logo {
     width: 70px;
     height: 70px;
-  }
-  main {
-    margin: 10px 0 10px 0;
   }
   .inicio {
     height: auto;
@@ -401,19 +407,29 @@ footer p {
   .inicio section .contenido .texto .accordion {
     margin-top: 20px;
   }
-  footer .redes svg {
-    width: 30px;
-    height: 30px;
-  }
-  footer p {
-    font-size: 8px;
-  }
   .contacts form div {
     display: flex;
     flex-direction: column;
   }
   .contacts .contactsForm div form {
     width: auto;
+  }
+  .portfolio .descriptions div p {
+    font-size: 18px;
+  }
+  .certificados .row .card .card-body p {
+    font-size: 18px;
+  }
+  .contacts .contactsForm div form div label {
+    font-size: 18px;
+  }
+  footer .redes svg {
+    width: 30px;
+    height: 30px;
+  }
+  footer p {
+    font-size: 12px;
+    text-align: center;
   }
 }
 
