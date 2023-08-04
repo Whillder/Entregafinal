@@ -385,6 +385,9 @@ footer p {
   .contacts .contactsForm div form {
     width: 350px;
   }
+  footer p {
+    text-align: center;
+  }
 }
 @media (max-width: 320px) {
   main {
